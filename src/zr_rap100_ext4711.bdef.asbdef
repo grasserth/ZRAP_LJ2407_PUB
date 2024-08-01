@@ -1,0 +1,54 @@
+managed implementation in class ZBP_R_RAP100_EXT4711 unique;
+strict ( 2 );
+with draft;
+define behavior for ZR_RAP100_EXT4711 alias ZrRap100Ext4711
+persistent table ZRAP100_EXT4711
+draft table ZRAP100_EXT471_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+
+{
+  field ( readonly )
+   NachtragGuid,
+   CreatedBy,
+   CreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( numbering : managed )
+   NachtragGuid;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZRAP100_EXT4711
+  {
+    NachtragGuid = nachtrag_guid;
+    LineGuid = line_guid;
+    NachtragId = nachtrag_id;
+    PositionsNr = positions_nr;
+    Benennung = benennung;
+    Inhalt = inhalt;
+    Erstellungsdatum = erstellungsdatum;
+    Bewertung = bewertung;
+    Eingangsdatum = eingangsdatum;
+    SummeInput = summe_input;
+    Nachtragslauf = nachtragslauf;
+    Notiz = notiz;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LocalLastChangedBy = local_last_changed_by;
+    LocalLastChangedAt = local_last_changed_at;
+    LastChangedAt = last_changed_at;
+  }
+}

@@ -1,0 +1,63 @@
+managed implementation in class ZBP_R_RAP100_ORD4711 unique;
+strict ( 2 );
+with draft;
+define behavior for ZR_RAP100_ORD4711 alias ZrRap100Ord4711
+persistent table ZRAP100_ORD4711
+draft table ZRAP100_ORD471_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+
+{
+  field ( readonly )
+   LineGuid,
+   CreatedBy,
+   CreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( numbering : managed )
+   LineGuid;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZRAP100_ORD4711
+  {
+    LineGuid = line_guid;
+    ItemId = item_id;
+    VersionId = version_id;
+    ItemGuid = item_guid;
+    PsProjectNr = ps_project_nr;
+    PspElement = psp_element;
+    PspParent = psp_parent;
+    Kostengruppe = kostengruppe;
+    Auftragsnummer = auftragsnummer;
+    PspBezeichung = psp_bezeichung;
+    SummeInput = summe_input;
+    PlanwertInput = planwert_input;
+    BudgetInc = budget_inc;
+    BudgetDec = budget_dec;
+    MittelbindungId = mittelbindung_id;
+    Auftragssumme = auftragssumme;
+    AuftragNachtrag = auftrag_nachtrag;
+    Auftragsdatum = auftragsdatum;
+    Vergabenummer = vergabenummer;
+    Kreditor = kreditor;
+    Notiz = notiz;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LocalLastChangedBy = local_last_changed_by;
+    LocalLastChangedAt = local_last_changed_at;
+    LastChangedAt = last_changed_at;
+  }
+}

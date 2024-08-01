@@ -1,0 +1,227 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'NachtragGuid'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'NachtragGuid'
+annotate view ZC_RAP100_EXT4711 with
+{
+  @EndUserText.label: 'Nachtrag Guid'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  NachtragGuid;
+  
+  @EndUserText.label: 'Line Guid'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'UUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'UUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  LineGuid;
+  
+  @EndUserText.label: 'Nachtrag Id'
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  @UI.lineItem: [ {
+    position: 30 
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  NachtragId;
+  
+  @EndUserText.label: 'Positions Nr'
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  @UI.lineItem: [ {
+    position: 40 
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  PositionsNr;
+  
+  @EndUserText.label: 'Benennung'
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  @UI.lineItem: [ {
+    position: 50 
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Benennung;
+  
+  @EndUserText.label: 'Inhalt'
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Inhalt;
+  
+  @EndUserText.label: 'Erstellungsdatum'
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  Erstellungsdatum;
+  
+  @EndUserText.label: 'Bewertung'
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  Bewertung;
+  
+  @EndUserText.label: 'Eingangsdatum'
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  Eingangsdatum;
+  
+  @EndUserText.label: 'Summe Input'
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  SummeInput;
+  
+  @EndUserText.label: 'Nachtragslauf'
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  @UI.lineItem: [ {
+    position: 110 
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  Nachtragslauf;
+  
+  @EndUserText.label: 'Notiz'
+  @UI.identification: [ {
+    position: 120 
+  } ]
+  @UI.lineItem: [ {
+    position: 120 
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  Notiz;
+  
+  @UI.identification: [ {
+    position: 130 , 
+    label: 'Created By'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 , 
+    label: 'Created By'
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 140 , 
+    label: 'Created On'
+  } ]
+  @UI.lineItem: [ {
+    position: 140 , 
+    label: 'Created On'
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 150 , 
+    label: 'Changed By'
+  } ]
+  @UI.lineItem: [ {
+    position: 150 , 
+    label: 'Changed By'
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 160 , 
+    label: 'Changed On'
+  } ]
+  @UI.lineItem: [ {
+    position: 160 , 
+    label: 'Changed On'
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 170 , 
+    label: 'Changed On'
+  } ]
+  @UI.lineItem: [ {
+    position: 170 , 
+    label: 'Changed On'
+  } ]
+  @UI.selectionField: [ {
+    position: 170 
+  } ]
+  LastChangedAt;
+}

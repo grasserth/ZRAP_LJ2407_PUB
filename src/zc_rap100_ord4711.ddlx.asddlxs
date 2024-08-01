@@ -1,0 +1,335 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'LineGuid'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'LineGuid'
+annotate view ZC_RAP100_ORD4711 with
+{
+  @EndUserText.label: 'Line Guid'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  LineGuid;
+  
+  @EndUserText.label: 'Item Id'
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  ItemId;
+  
+  @EndUserText.label: 'Version Id'
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  @UI.lineItem: [ {
+    position: 30 
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  VersionId;
+  
+  @EndUserText.label: 'Item Guid'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'UUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'UUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  ItemGuid;
+  
+  @EndUserText.label: 'Ps Project Nr'
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  @UI.lineItem: [ {
+    position: 50 
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  PsProjectNr;
+  
+  @EndUserText.label: 'Psp Element'
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  PspElement;
+  
+  @EndUserText.label: 'Psp Parent'
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  PspParent;
+  
+  @EndUserText.label: 'Kostengruppe'
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  Kostengruppe;
+  
+  @EndUserText.label: 'Auftragsnummer'
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  Auftragsnummer;
+  
+  @EndUserText.label: 'Psp Bezeichung'
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  PspBezeichung;
+  
+  @EndUserText.label: 'Summe Input'
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  @UI.lineItem: [ {
+    position: 110 
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  SummeInput;
+  
+  @EndUserText.label: 'Planwert Input'
+  @UI.identification: [ {
+    position: 120 
+  } ]
+  @UI.lineItem: [ {
+    position: 120 
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  PlanwertInput;
+  
+  @EndUserText.label: 'Budget Inc'
+  @UI.identification: [ {
+    position: 130 
+  } ]
+  @UI.lineItem: [ {
+    position: 130 
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  BudgetInc;
+  
+  @EndUserText.label: 'Budget Dec'
+  @UI.identification: [ {
+    position: 140 
+  } ]
+  @UI.lineItem: [ {
+    position: 140 
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  BudgetDec;
+  
+  @EndUserText.label: 'Mittelbindung Id'
+  @UI.identification: [ {
+    position: 150 
+  } ]
+  @UI.lineItem: [ {
+    position: 150 
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+  MittelbindungId;
+  
+  @EndUserText.label: 'Auftragssumme'
+  @UI.identification: [ {
+    position: 160 
+  } ]
+  @UI.lineItem: [ {
+    position: 160 
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+  Auftragssumme;
+  
+  @EndUserText.label: 'Auftrag Nachtrag'
+  @UI.identification: [ {
+    position: 170 
+  } ]
+  @UI.lineItem: [ {
+    position: 170 
+  } ]
+  @UI.selectionField: [ {
+    position: 170 
+  } ]
+  AuftragNachtrag;
+  
+  @EndUserText.label: 'Auftragsdatum'
+  @UI.identification: [ {
+    position: 180 
+  } ]
+  @UI.lineItem: [ {
+    position: 180 
+  } ]
+  @UI.selectionField: [ {
+    position: 180 
+  } ]
+  Auftragsdatum;
+  
+  @EndUserText.label: 'Vergabenummer'
+  @UI.identification: [ {
+    position: 190 
+  } ]
+  @UI.lineItem: [ {
+    position: 190 
+  } ]
+  @UI.selectionField: [ {
+    position: 190 
+  } ]
+  Vergabenummer;
+  
+  @EndUserText.label: 'Kreditor'
+  @UI.identification: [ {
+    position: 200 
+  } ]
+  @UI.lineItem: [ {
+    position: 200 
+  } ]
+  @UI.selectionField: [ {
+    position: 200 
+  } ]
+  Kreditor;
+  
+  @EndUserText.label: 'Notiz'
+  @UI.identification: [ {
+    position: 210 
+  } ]
+  @UI.lineItem: [ {
+    position: 210 
+  } ]
+  @UI.selectionField: [ {
+    position: 210 
+  } ]
+  Notiz;
+  
+  @UI.identification: [ {
+    position: 220 , 
+    label: 'Created By'
+  } ]
+  @UI.lineItem: [ {
+    position: 220 , 
+    label: 'Created By'
+  } ]
+  @UI.selectionField: [ {
+    position: 220 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 230 , 
+    label: 'Created On'
+  } ]
+  @UI.lineItem: [ {
+    position: 230 , 
+    label: 'Created On'
+  } ]
+  @UI.selectionField: [ {
+    position: 230 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 240 , 
+    label: 'Changed By'
+  } ]
+  @UI.lineItem: [ {
+    position: 240 , 
+    label: 'Changed By'
+  } ]
+  @UI.selectionField: [ {
+    position: 240 
+  } ]
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 250 , 
+    label: 'Changed On'
+  } ]
+  @UI.lineItem: [ {
+    position: 250 , 
+    label: 'Changed On'
+  } ]
+  @UI.selectionField: [ {
+    position: 250 
+  } ]
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 260 , 
+    label: 'Changed On'
+  } ]
+  @UI.lineItem: [ {
+    position: 260 , 
+    label: 'Changed On'
+  } ]
+  @UI.selectionField: [ {
+    position: 260 
+  } ]
+  LastChangedAt;
+}
